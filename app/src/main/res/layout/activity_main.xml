@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context=".MainActivity" android:orientation="horizontal">
+    <LinearLayout
+        android:id="@+id/login" android:layout_width="wrap_content"
+        android:layout_height="match_parent" android:layout_weight="6"
+        android:background="#287CC9" android:gravity="bottom|center"
+        android:orientation="vertical" android:transitionName="login_transition">
+        <EditText
+            android:id="@+id/editText" android:layout_width="200dp"
+            android:layout_height="wrap_content" android:layout_marginBottom="10dp"
+            android:ems="10" android:hint="Email"
+            android:inputType="textPersonName" android:textColorHint="#80FFFFFF" />
+        <EditText
+            android:id="@+id/editText2" android:layout_width="200dp"
+            android:layout_height="wrap_content" android:layout_marginBottom="10dp"
+            android:ems="10" android:hint="Password"
+            android:inputType="textPassword" android:textColor="#FFFFFF"
+            android:textColorHint="#80FFFFFF" />
+        <Button
+            android:id="@+id/button2" android:layout_width="100dp"
+            android:layout_height="wrap_content" android:layout_marginBottom="100dp"
+            android:background="#1C588F" android:text="Login"
+            android:textColor="#FFFFFF" />
+        <TextView
+            android:id="@+id/login_text_view" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginBottom="130dp"
+            android:fontFamily="@font/work_sans_bold" android:text="LOGIN"
+            android:textColor="#FFFFFF" android:textSize="36sp"
+            android:transitionName="login_text_transition" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/registration" android:layout_width="wrap_content"
+        android:layout_height="match_parent" android:layout_weight="1"
+        android:background="#2FCE3C" android:gravity="center"
+        android:orientation="vertical" android:transitionName="registration_transition">
+
+        <TextView
+            android:id="@+id/registration_text_view" android:layout_width="13dp"
+            android:layout_height="wrap_content" android:fontFamily="@font/work_sans_bold"
+            android:text="REGISTRATION" android:textAlignment="center"
+            android:textColor="#FFFFFF" android:textSize="18sp"
+            android:transitionName="registration_text_transition" />
+    </LinearLayout>
+</LinearLayout>
